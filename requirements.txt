@@ -1,0 +1,11 @@
+streamlit
+pandas
+numpy
+matplotlib
+Seaborn
+scipy
+scikit-learn
+plotly
+google-generativeai
+requests
+tabulate
