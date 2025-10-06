@@ -1,20 +1,19 @@
-#app.py will be containing the forntend interface of the project.with the use of modules such as streamlit,pands and integrations with files like chatbot_logic will be established here.
-#the heavy liftting for the frontend design will be done by stramlit modulue
+
 import streamlit as st
 import pandas as pd
 from chatbot_logic import handle_query
 from utils import get_plot_function_and_cols # For direct plot handling
-# --- Page Configuration ---
-st.set_page_config(page_title="📊 Data Analytics Chatbot", layout="wide", initial_sidebar_state="collapsed")
+
+st.set_page_config(page_title="📊 Data Intelligence Assistant", layout="wide", initial_sidebar_state="collapsed")
 
 # --- Title and Description ---
-st.title("📊 Data Analytics Chatbot 🤖")
+st.title("📊 Data Intelligence Assistant")
 st.markdown("""
 Welcome! Upload your CSV dataset, and then ask me questions about it. I can help with:
 * EDA: Show head, summary, column stats, data types, missing values, correlations.
 * Visualizations: Histograms, box plots, scatter plots, correlation heatmaps.
-* Machine Learning: Train simple regression or classification models.
-* General Questions: Ask anything else, and I'll try to answer with the help of Gemini!
+* Machine Learning: Train regression or classification models.
+* General Questions: Ask anything else that you'd like to know!
 """)
 
 # --- API Key Check (Optional but good practice for local dev) ---
